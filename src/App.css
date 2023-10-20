@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Almarai&family=Poppins:wght@300;400&display=swap');
+
+* {
+  font-family: 'Almarai', sans-serif;
+  font-family: 'Poppins', sans-serif;
+}
+
+.App {
+
+  background: linear-gradient(219.86deg, #e3ffd2e0 -11.47%, #fff2eb2b 41.87%, #fbc5bde0 103.59%);
+
+}
