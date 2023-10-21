@@ -8,6 +8,7 @@ module.exports = {
         "cus-red" : "#DA1C00",
         "cus-gray" : "#eaeff6",
         "cus-lblue" : "#3F93FF",
+        "cus-green" : "#04CD00",
 
       }
     },

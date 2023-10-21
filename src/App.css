@@ -11,5 +11,11 @@
 .App {
 
   background: linear-gradient(219.86deg, #e3ffd2e0 -11.47%, #fff2eb2b 41.87%, #fbc5bde0 103.59%);
+  min-height: 100vh;
 
 }
+
+.sidebar {
+  max-width: 80vh;
+}
+
