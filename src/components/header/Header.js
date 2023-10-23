@@ -2,7 +2,7 @@ import Profile from "../../assets/Ellipse 3.png"
 import BellIcon from "../../assets/Vector.png"
 import ChatIcon from "../../assets/message (6) 1.png"
 import { PiListLight } from "react-icons/pi"
-function Header({title}) {
+function Header({ title }) {
     return (<>
         <div className="border bg-white h-16 flex items-center justify-between md:px-10 px-5  ">
             <p className="font-bold text-xl">

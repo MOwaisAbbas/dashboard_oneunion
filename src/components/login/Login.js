@@ -4,8 +4,8 @@ import { PiEyeThin } from "react-icons/pi"
 function Login() {
     return (<>
 
-        <div className=" App  mx-auto py-20 px-1 flex justify-center items-center">
-            <div className=" bg-white max-w-sm   rounded-md p-4 px-5">
+        <div className=" App  mx-auto py-20 px-3 flex justify-center items-center ">
+            <div className=" bg-white 2xl:w-1/5 lg:w-1/4 sm:w-1/2 w-full    rounded-md p-4 px-5 ">
                 <div className="py-3">
                     <img className="w-32 mx-auto" src={Logo} />
                 </div>
@@ -20,7 +20,7 @@ function Login() {
                         <div className="relative">
                             <span className="absolute text-cus-lblue px-1  py-2"><CiUser /></span>
 
-                            <input type="text" className="w-full rounded-md outline-none active:border-cus-blue focus:border-cus-blue border text-sm h-8  px-6" id="username" placeholder="Enter you email" />
+                            <input type="text" className="w-full rounded-md outline-none active:border-cus-blue focus:border-cus-blue border text-xs h-8  px-6" id="username" placeholder="Enter you email" />
                         </div>
                     </div>
                     <div className="flex flex-col gap-4 py-3 pt-0">
@@ -30,7 +30,7 @@ function Login() {
                         <div className="relative">
                             <span className="absolute text-cus-lblue px-1  py-2"><PiEyeThin /></span>
 
-                            <input type="password" className="w-full rounded-md outline-none active:border-cus-blue focus:border-cus-blue border text-sm h-8  px-6" id="password" placeholder="Enter you email" />
+                            <input type="password" className="w-full rounded-md outline-none active:border-cus-blue focus:border-cus-blue border text-xs h-8  px-6" id="password" placeholder="Enter you email" />
                         </div>
 
                     </div>
@@ -41,8 +41,8 @@ function Login() {
                         </label>
                         <a href="javaScript:void(0)" className="text-cus-red ">Forgot Password?</a>
                     </div>
-                    <button className="bg-cus-blue rounded-md text-white p-2 w-full ">Log in</button>
-                    <p className="text-center text-sm py-4 pt-6">Don’t have an account?<a className="text-cus-blue" href="javaScript:void(0)">Sign Up</a> </p>
+                    <button className="bg-cus-blue rounded-md text-white p-2 text-sm w-full ">Log in</button>
+                    <p className="text-center text-xs py-4 pt-6">Don’t have an account?<a className="text-cus-blue" href="javaScript:void(0)">Sign Up</a> </p>
                 </div>
 
             </div>

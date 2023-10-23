@@ -3,10 +3,14 @@ import SideBar from "../sidebar/SideBar";
 import Profile from "../../assets/Ellipse 3.png"
 
 function Chat() {
+    const obj = {
+        ative: true,
+        content: "Support & Help"
+    }
     return (<>
         <div className="flex">
-            <div className=" lg:block hidden border border-red" >
-                <SideBar />
+            <div className=" sm:block hidden border border-red" >
+                <SideBar obj={obj} />
             </div>
             <div className="w-full" >
                 <Header title="Help and Support" />
@@ -30,13 +34,13 @@ function Chat() {
                             <div className="self-start flex items-start gap-4 md:w-8/12 w-10/12 mt-4">
                                 <img src={Profile} />
                                 <div className="flex flex-col items-end gap-1">
-                                    <p className="p-2 bg-cus-gray rounded-md max-w-max sm:text-sm text-xs">Good morning, John! How can I assist you today? </p>
+                                    <p className="p-2 bg-cus-gray rounded-md max-w-max  text-xs">Good morning, John! How can I assist you today? </p>
                                     <p className="text-[#053E90] text-xs">9:48 AM</p>
                                 </div>
                             </div>
                             <div className=" self-end flex items-start justify-end gap-4 md:w-8/12 w-10/12 mt-4">
                                 <div className="flex flex-col items-end gap-1">
-                                    <p className="p-2 bg-[#053984] text-white rounded-md max-w-max sm:text-sm text-xs">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient , .</p>
+                                    <p className="p-2 bg-[#053984] text-white rounded-md max-w-max  text-xs">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient , .</p>
                                     <p className="text-[#053E90] text-xs">9:48 AM</p>
                                 </div>
                                 <img src={Profile} />
@@ -44,20 +48,20 @@ function Chat() {
                             <div className="self-start flex items-start gap-4 md:w-8/12 w-10/12 mt-4">
                                 <img src={Profile} />
                                 <div className="flex flex-col items-end gap-1">
-                                    <p className="p-2 bg-cus-gray rounded-md max-w-max sm:text-sm text-xs">Good morning, John! How can I assist you today? </p>
+                                    <p className="p-2 bg-cus-gray rounded-md max-w-max  text-xs">Good morning, John! How can I assist you today? </p>
                                     <p className="text-[#053E90] text-xs">9:48 AM</p>
                                 </div>
                             </div>
                             <div className=" self-end flex items-start justify-end gap-4 md:w-8/12 w-10/12 mt-4">
                                 <div className="flex flex-col items-end gap-1">
-                                    <p className="p-2 bg-[#053984] text-white rounded-md max-w-max sm:text-sm text-xs">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient , .</p>
+                                    <p className="p-2 bg-[#053984] text-white rounded-md max-w-max  text-xs">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient , .</p>
                                     <p className="text-[#053E90] text-xs">9:48 AM</p>
                                 </div>
                                 <img src={Profile} />
                             </div>
                             <div className=" self-end flex items-start justify-end gap-4 md:w-8/12 w-10/12 mt-4">
                                 <div className="flex flex-col items-end gap-1">
-                                    <p className="p-2 bg-[#053984] text-white rounded-md max-w-max sm:text-sm text-xs">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient , .</p>
+                                    <p className="p-2 bg-[#053984] text-white rounded-md max-w-max  text-xs">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient , .</p>
                                     <p className="text-[#053E90] text-xs">9:48 AM</p>
                                 </div>
                                 <img src={Profile} />
@@ -65,13 +69,13 @@ function Chat() {
                             <div className="self-start flex items-start gap-4 md:w-8/12 w-10/12 mt-4">
                                 <img src={Profile} />
                                 <div className="flex flex-col items-end gap-1">
-                                    <p className="p-2 bg-cus-gray rounded-md max-w-max sm:text-sm text-xs">Good morning, John! How can I assist you today? </p>
+                                    <p className="p-2 bg-cus-gray rounded-md max-w-max  text-xs">Good morning, John! How can I assist you today? </p>
                                     <p className="text-[#053E90] text-xs">9:48 AM</p>
                                 </div>
                             </div>
                             <div className=" self-end flex items-start justify-end gap-4 md:w-8/12 w-10/12 mt-4">
                                 <div className="flex flex-col items-end gap-1">
-                                    <p className="p-2 bg-[#053984] text-white rounded-md max-w-max sm:text-sm text-xs">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient , .</p>
+                                    <p className="p-2 bg-[#053984] text-white rounded-md max-w-max  text-xs">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient , .</p>
                                     <p className="text-[#053E90] text-xs">9:48 AM</p>
                                 </div>
                                 <img src={Profile} />
@@ -79,20 +83,20 @@ function Chat() {
                             <div className="self-start flex items-start gap-4 md:w-8/12 w-10/12 mt-4">
                                 <img src={Profile} />
                                 <div className="flex flex-col items-end gap-1">
-                                    <p className="p-2 bg-cus-gray rounded-md max-w-max sm:text-sm text-xs">Good morning, John! How can I assist you today? </p>
+                                    <p className="p-2 bg-cus-gray rounded-md max-w-max  text-xs">Good morning, John! How can I assist you today? </p>
                                     <p className="text-[#053E90] text-xs">9:48 AM</p>
                                 </div>
                             </div>
                             <div className=" self-end flex items-start justify-end gap-4 md:w-8/12 w-10/12 mt-4">
                                 <div className="flex flex-col items-end gap-1">
-                                    <p className="p-2 bg-[#053984] text-white rounded-md max-w-max sm:text-sm text-xs">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient , .</p>
+                                    <p className="p-2 bg-[#053984] text-white rounded-md max-w-max  text-xs">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient , .</p>
                                     <p className="text-[#053E90] text-xs">9:48 AM</p>
                                 </div>
                                 <img src={Profile} />
                             </div>
                             <div className=" self-end flex items-start justify-end gap-4 md:w-8/12 w-10/12 mt-4">
                                 <div className="flex flex-col items-end gap-1">
-                                    <p className="p-2 bg-[#053984] text-white rounded-md max-w-max sm:text-sm text-xs">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient , .</p>
+                                    <p className="p-2 bg-[#053984] text-white rounded-md max-w-max  text-xs">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient , .</p>
                                     <p className="text-[#053E90] text-xs">9:48 AM</p>
                                 </div>
                                 <img src={Profile} />

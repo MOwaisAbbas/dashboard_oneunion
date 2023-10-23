@@ -2,14 +2,19 @@ import SideBar from "../sidebar/SideBar";
 import Header from "../header/Header";
 
 function AddressForm() {
+    const obj = {
+        ative: true,
+        content: "Book Shipment"
+    }
+
     return (<>
 
 
 
 
         <div className="flex">
-            <div className=" lg:block hidden " >
-                <SideBar />
+            <div className=" sm:block hidden " >
+                <SideBar obj={obj} />
             </div>
             <div className="border border-red   w-full" >
                 <Header title="Dashboard" />
