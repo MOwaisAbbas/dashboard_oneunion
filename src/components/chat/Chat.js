@@ -3,18 +3,12 @@ import SideBar from "../sidebar/SideBar";
 import Profile from "../../assets/Ellipse 3.png"
 
 function Chat() {
-    const obj = {
-        ative: true,
-        content: "Support & Help"
-    }
+
+   
     return (<>
-        <div className="flex">
-            <div className=" sm:block hidden border border-red" >
-                <SideBar obj={obj} />
-            </div>
-            <div className="w-full" >
-                <Header title="Help and Support" />
-                <div className="p-2  bg-cus-gray ">
+        
+           
+            
                     <div className="bg-white rounded-md md:p-5 p-3">
                         <div className="flex items-center justify-start gap-4  px-6 pb-4 border-b-2">
                             <div>
@@ -115,11 +109,9 @@ function Chat() {
                     </div>
 
 
-                </div>
+              
 
-            </div>
-
-        </div>
+        
 
     </>);
 }

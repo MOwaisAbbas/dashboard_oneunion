@@ -2,23 +2,12 @@ import SideBar from "../sidebar/SideBar";
 import Header from "../header/Header";
 
 function AddressForm() {
-    const obj = {
-        ative: true,
-        content: "Book Shipment"
-    }
-
+   
     return (<>
 
 
 
 
-        <div className="flex">
-            <div className=" sm:block hidden " >
-                <SideBar obj={obj} />
-            </div>
-            <div className="border border-red   w-full" >
-                <Header title="Dashboard" />
-                <div className="p-4 bg-cus-gray">
 
 
                     <div className="bg-white mx-auto rounded-md p-4 border">
@@ -183,11 +172,6 @@ function AddressForm() {
                         <button className="bg-cus-blue rounded-md text-white p-2 text-sm md:w-2/6 w-full"> Get Lable</button>
                     </div>
 
-                </div>
-
-            </div>
-
-        </div>
 
 
 

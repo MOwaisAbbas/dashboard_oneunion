@@ -5,20 +5,11 @@ import "../../App.css"
 
 function NewQoutes() {
 
-    const obj = {
-        ative: true,
-        content: "New Qoutes"
-    }
+    
 
     return (
         <>
-            <div className="flex">
-                <div className=" sm:block hidden border border-red" >
-                    <SideBar obj={obj}/>
-                </div>
-                <div className="w-full" >
-                    <Header title="New Qoutes" />
-                    <div className="p-2  bg-cus-gray ">
+     
 
                         <div className="bg-white rounded-md md:py-5 py-3 px-0 flex items-center mt-4 justify-between">
                             <div className="overflow-x-scroll w-full">
@@ -180,11 +171,6 @@ function NewQoutes() {
                         </div>
 
 
-                    </div>
-
-                </div>
-
-            </div>
         </>
     );
 }

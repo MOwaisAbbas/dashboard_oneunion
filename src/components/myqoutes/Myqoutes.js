@@ -4,20 +4,11 @@ import { PiDotsThreeVerticalBold } from "react-icons/pi"
 import "../../App.css"
 
 function Myqoutes() {
-    const obj = {
-        ative: true,
-        content: "My Qoutes"
-    }
+  
 
     return (
         <>
-            <div className="flex">
-                <div className=" sm:block hidden border border-red" >
-                    <SideBar obj={obj}  />
-                </div>
-                <div className="w-full" >
-                    <Header title="My Qoutes" />
-                    <div className="p-2  bg-cus-gray ">
+          
                         <div className="bg-white rounded-md md:p-5 p-3 flex items-center justify-between">
                             <select className=" outline-none active:border-cus-red focus:border-cus-red border  p-2 text-sm rounded-md">
 
@@ -192,11 +183,7 @@ function Myqoutes() {
                         </div>
 
 
-                    </div>
-
-                </div>
-
-            </div>
+                  
         </>
     );
 }

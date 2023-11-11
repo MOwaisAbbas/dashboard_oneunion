@@ -1,4 +1,4 @@
-import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { BrowserRouter, Route, Routes, RouterProvider, createBrowserRouter } from "react-router-dom";
 import Login from "../login/Login";
 import AddressForm from "../forms/AddressForm";
 import Chat from "../chat/Chat";
@@ -6,25 +6,60 @@ import Myqoutes from "../myqoutes/Myqoutes";
 import NewQoutes from "../newqoutes/NewQoutes";
 import TrackShipment from "../trackshipment/TrackShipment";
 import ShipmentHistory from "../shipmenthistory/ShipmentHistory";
-
-
+import Layout from "../layout/Layout";
 
 function Routing() {
+    const router = createBrowserRouter([
+        {
+            path: "/",
+            element: <Layout />,
+
+            children: [
+                {
+                    path: "support&help",
+                    element: <Chat />,
+                },
+                {
+                    path: "myqoutes",
+                    element: <Myqoutes />,
+                },
+                {
+                    path: "bookshipment",
+                    element: <AddressForm />,
+                },
+                {
+                    path: "trackshipment",
+                    element: <TrackShipment />,
+                },
+                {
+                    path: "shipmenthistory",
+                    element: <ShipmentHistory />,
+                },
+                {
+                    path: "support&help",
+                    element: <Chat />,
+                },
+                {
+                    path: "",
+                    element: <NewQoutes />,
+                },
+
+            ]
+        },
+        {
+            path: "login",
+            element: <Login />
+
+        }
+
+    ])
     return (
         <>
-            <BrowserRouter>
-                <Routes>
-                    <Route path="/support&help" element={<Chat />} />
-                    <Route path="/myqoutes" element={<Myqoutes />} />
-                    <Route path="/bookshipment" element={<AddressForm />} />
-                    <Route path="/trackshipment" element={<TrackShipment />} />
-                    <Route path="/shipmenthistory" element={<ShipmentHistory />} />
-                    <Route path="/" element={<NewQoutes />} />
-                    <Route path="/login" element={<Login />} />
-                </Routes>
-            </BrowserRouter>
+
+            <RouterProvider router={router} />
         </>
-    );
+    )
 }
+
 
 export default Routing;

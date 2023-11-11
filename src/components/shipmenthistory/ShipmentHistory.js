@@ -4,20 +4,10 @@ import { PiDotsThreeVerticalBold } from "react-icons/pi"
 import "../../App.css"
 
 function ShipmentHistory() {
-    const obj = {
-        ative: true,
-        content: "Shipment History"
-    }
-
+   
     return (
         <>
-            <div className="flex">
-                <div className=" sm:block hidden border border-red" >
-                    <SideBar obj={obj} />
-                </div>
-                <div className="w-full" >
-                    <Header title="Shipment History" />
-                    <div className="p-2  bg-cus-gray ">
+           
                         <div className="bg-white rounded-md md:p-5 p-3 flex lg:flex-row flex-col items-center gap-2 justify-between">
                             <div className="flex md:flex-row flex-col gap-1">
                                 <select className="border w-32 border-cus-red  text-cus-red bg-[#fae4e1]   p-2 text-sm rounded-md">
@@ -221,11 +211,7 @@ function ShipmentHistory() {
                         </div>
 
 
-                    </div>
-
-                </div>
-
-            </div>
+                   
         </>
     );
 }

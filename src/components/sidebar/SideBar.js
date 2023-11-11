@@ -9,22 +9,14 @@ import { PiTarget } from "react-icons/pi"
 
 function SideBar({ obj }) {
     const items = [
-        { content: "New Qoutes", src: icon1, path: "/", active: false },
-        { content: "My Qoutes", src: icon1, path: "/myqoutes", active: false },
-        { content: "Book Shipment", src: icon4, path: "/bookshipment", active: false },
-        { content: "Track Shipments", src: icon3, path: "/trackshipment", active: false },
-        { content: "Shipment History", src: icon1, path: "/shipmenthistory", active: false },
-        { content: "Support & Help", src: icon2, path: "/support&help", active: false }
+        { content: "New Qoutes", src: icon1, path: "/" },
+        { content: "My Qoutes", src: icon1, path: "/myqoutes" },
+        { content: "Book Shipment", src: icon4, path: "/bookshipment" },
+        { content: "Track Shipments", src: icon3, path: "/trackshipment" },
+        { content: "Shipment History", src: icon1, path: "/shipmenthistory" },
+        { content: "Support & Help", src: icon2, path: "/support&help" }
     ]
-    const findValue = items.filter(item => item.content === obj.content);
-    const loc = useLocation()
-    let classs = " bg-cus-blue text-white "
-    let bool = true
 
-    const foo = (e) => {
-        e.target.parentNode.className += classs
-
-    }
     return (
         <>
             <div className="sm:translate-x-0 -translate-x-full  w-[160px] bg-white  h-full ">
@@ -35,10 +27,15 @@ function SideBar({ obj }) {
                 </NavLink>
                 <ul className="list-none">
                     {items.map((v, i) =>
-                        <li onClick={foo} key={i}>
-                            <NavLink to={v.path} className={`flex hover:bg-cus-blue hover:text-white transition-all items-center justify-start p-2 text-xs gap-3 `}>
-                                {/* <NavLink to={v.path} className={`flex ${Index === i && " bg-cus-blue text-white "}  hover:bg-cus-blue hover:text-white transition-all items-center justify-start p-2 text-xs gap-3 `}> */}
-                                <img className="" src={v.src} />
+                        <li key={i}>
+                            <NavLink to={v.path}
+                                //     `flex hover:bg-cus-blue hover:text-white transition-all items-center justify-start p-2 text-xs gap-3 `
+                                className={({ isActive }) =>
+                                `flex ${isActive ? "bg-cus-blue text-white" : " bg-white "}  hover:bg-cus-blue hover:text-white transition-all items-center justify-start p-2 text-xs gap-3 duration-200 `
+                                    
+                                }
+                            >
+                                <img className="fill-white" src={v.src} />
                                 <p>{v.content}</p>
                             </NavLink>
                         </li>
